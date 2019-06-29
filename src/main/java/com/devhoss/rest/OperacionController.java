@@ -15,7 +15,7 @@ public class OperacionController {
 	@GetMapping("/{numero}")
 	public Respuesta getbyid(@PathVariable int numero) {
 
-		return new Respuesta(numero,factorialUsingForLoop(numero),"1.0");
+		return new Respuesta(numero,factorialHavingLargeResult(numero),"2.0");
 	}
 	public long factorialUsingForLoop(int n) {
 		long fact = 1;

@@ -1,12 +1,13 @@
 package com.devhoss.entidades;
+import java.math.BigInteger;
 
 public class Respuesta {
 private int numero;
-private Long respuesta;
+private BigInteger respuesta;
 private String version;
 
 
-public Respuesta(int numero, Long respuesta, String version) {
+public Respuesta(int numero, BigInteger respuesta, String version) {
 	super();
 	this.numero = numero;
 	this.respuesta = respuesta;
@@ -18,10 +19,10 @@ public int getNumero() {
 public void setNumero(int numero) {
 	this.numero = numero;
 }
-public Long getRespuesta() {
+public BigInteger getRespuesta() {
 	return respuesta;
 }
-public void setRespuesta(Long respuesta) {
+public void setRespuesta(BigInteger respuesta) {
 	this.respuesta = respuesta;
 }
 public String getVersion() {
